@@ -1,0 +1,36 @@
+{
+  "name": "template-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "homepage": ".",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "dayjs": "^1.10.6",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^16.7.1",
+    "@types/react": "^17.0.19",
+    "@types/react-dom": "^17.0.9",
+    "@types/user-event": "^4.1.1",
+    "autoprefixer": "^10.3.1",
+    "eslint": "^7.29.0",
+    "eslint-plugin-react": "^7.24.0",
+    "javascript-obfuscator": "^2.19.0",
+    "postcss": "^8.3.6",
+    "prettier": "^2.3.2",
+    "rollup-plugin-obfuscator": "^0.2.0",
+    "tailwindcss": "^2.2.7",
+    "vite": "^2.5.0",
+    "vite-react-jsx": "^1.1.2"
+  },
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  }
+}
