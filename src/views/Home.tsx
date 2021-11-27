@@ -3,7 +3,6 @@ import { toJavanese } from 'carakanjs';
 import ReactMarkdown from 'react-markdown';
 import { ABOUT_TEXT, HELP_TEXT } from '../data/documentation';
 import remarkGfm from 'remark-gfm';
-import commentBox from 'commentbox.io/dist/commentBox.min';
 
 const Home = () => {
   const [useSwara, setUseSwara] = useState(true);
@@ -43,13 +42,6 @@ const Home = () => {
       setInputPlaceHolder('Coba tulis "es dawxt"');
     }
   }, [useAccents]);
-
-  useEffect(() => {
-    commentBox.removeCommentBox = commentBox('5647246792065024-proj');
-    return () => {
-      commentBox.removeCommentBox();
-    };
-  }, []);
 
   return (
     <>
@@ -120,7 +112,6 @@ const Home = () => {
           <ReactMarkdown remarkPlugins={[remarkGfm]} className="w-full px-6 prose prose-blue prose-md">
             {ABOUT_TEXT}
           </ReactMarkdown>
-          <div className="commentbox" />
         </div>
       </div>
       {/* Footer */}
