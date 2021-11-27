@@ -1,5 +1,5 @@
 import ReactDOM from 'react-dom';
-import { Route, Switch } from 'react-router';
+import { Route, Routes } from 'react-router';
 import { BrowserRouter as Router } from 'react-router-dom';
 
 import ScrollToTop from './components/ScrollToTop';
@@ -11,11 +11,9 @@ import { Home } from './views';
 
 const App = () => (
   <Router>
-    <Switch>
-      <ScrollToTop>
-        <Route exact path="/" component={Home} />
-      </ScrollToTop>
-    </Switch>
+    <Routes>
+      <Route path="/" element={<ScrollToTop><Home/></ScrollToTop>} />
+    </Routes>
   </Router>
 );
 

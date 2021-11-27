@@ -1,10 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+@font-face {
+  font-family: 'Cal Sans';
+  src: url('https://raw.githubusercontent.com/calendso/font/main/fonts/otf/CalSans-SemiBold.otf');
+  src: url('https://raw.githubusercontent.com/calendso/font/main/fonts/webfonts/CalSans-SemiBold.woff2') format('woff2'),
+    url('https://raw.githubusercontent.com/calendso/font/main/fonts/webfonts/CalSans-SemiBold.woff') format('woff'),
+    url('https://raw.githubusercontent.com/calendso/font/main/fonts/webfonts/CalSans-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
 
-html, body {
+@font-face {
+  font-family: "Javanese Text";
+  src: url('/javatext.ttf');
+}
+
+html,
+body {
+  position: relative;
   height: 100%;
   margin: 0;
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: "DM Sans", -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Noto Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: 'ui-sans-serif', '-apple-system', 'Helvetica Neue', 'Segoe UI', 'Roboto', Arial, 'Noto Sans', sans-serif,
+    'Apple Color Emoji', 'Noto Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+
+.text-javanese {
+  font-family: "Roboto Condensed", "Javanese Text", sans-serif;
+}
+
+.commentbox {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 20px;
 }

@@ -1,16 +1,22 @@
 {
-  "name": "template-frontend",
-  "version": "0.1.0",
+  "name": "nulisjawa",
+  "version": "1.0.0",
   "private": true,
   "license": "MIT",
   "homepage": ".",
   "dependencies": {
-    "axios": "^0.21.1",
-    "dayjs": "^1.10.6",
+    "@tailwindcss/forms": "^0.3.4",
+    "@tailwindcss/typography": "^0.4.1",
+    "carakanjs": "^1.1.2",
+    "commentbox.io": "^2.1.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-router": "^5.2.0",
-    "react-router-dom": "^5.2.0"
+    "react-markdown": "^7.1.0",
+    "react-router": "^6.0.2",
+    "react-router-dom": "^6.0.2",
+    "remark-gfm": "^3.0.1",
+    "unist-util-visit-parents": "^5.1.0",
+    "use-key-hook": "^1.5.0"
   },
   "devDependencies": {
     "@types/node": "^16.7.1",
@@ -18,12 +24,10 @@
     "@types/react-dom": "^17.0.9",
     "@types/user-event": "^4.1.1",
     "autoprefixer": "^10.3.1",
-    "eslint": "^7.29.0",
+    "eslint": "^8.3.0",
     "eslint-plugin-react": "^7.24.0",
-    "javascript-obfuscator": "^2.19.0",
     "postcss": "^8.3.6",
     "prettier": "^2.3.2",
-    "rollup-plugin-obfuscator": "^0.2.0",
     "tailwindcss": "^2.2.7",
     "vite": "^2.5.0",
     "vite-react-jsx": "^1.1.2"
